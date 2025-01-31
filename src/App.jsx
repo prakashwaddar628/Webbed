@@ -1,20 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import Dashboard from "./components/Dashboard";
+import Navbar from "./components/nav/Navbar";
+import Dashboard from "./components/dashboard/Dashboard";
+import Review from "./components/Review";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <Navbar />
+    <div className="bg-[#0e0f1a] min-h-screen">
+      <Navbar />
+      <div className="overflow-y-scroll w-full">
         <Dashboard />
+        <Review />
       </div>
-    </>
+    </div>
   );
 }
 

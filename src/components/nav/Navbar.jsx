@@ -1,16 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className='h-[54px] bg-[#262626] text-white flex justify-between items-center px-4 fixed z-100 m-b-[1px] w-full top-0'>
-      <div className='flex items-center space-x-2 float-left'>
-        <h3 className='text-white font-[12px]'>envato<span>market</span></h3>
+    <div className="h-[54px] bg-[#262626] text-white flex justify-between items-center px-6 fixed z-50 w-full top-0 shadow-md">
+      <div className="flex items-center space-x-2">
+        <h3 className="text-white text-lg font-semibold">
+          envato<span className="text-green-500">market</span>
+        </h3>
       </div>
-      <div>
-        <button>Buy now</button>
+      <div className="relative">
+        <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-md text-sm transition duration-300">
+          Buy now
+        </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
